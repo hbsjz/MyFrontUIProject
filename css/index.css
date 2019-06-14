@@ -1,5 +1,106 @@
+#mian_container{
+   width: 100%;
+   display: flex;
+}
+
+
 .imageText{
    font-size: 500px;
    color: bisque;
 
+}
+
+.left_div{
+   width: 300px;
+   height: auto;
+   background-color: burlywood;
+   text-align: center;
+   position: relative;
+
+}
+
+#left_top_logo_image{
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+.banner_div{
+   width: 60%;
+   height: auto;
+   flex: 1;  
+   background-color: cadetblue;
+   position: relative;
+}
+
+#left_ul{
+   margin-top: 30px;
+   padding: 0;
+}
+
+#left_ul li{
+   list-style: none;
+   padding: 20px 10px;
+   font-size: 18px;
+   color: black;
+}
+
+.right_menu{
+   position: absolute;
+   top: 0;
+   right: 0;
+   text-align: center;
+   background: black 1px;
+}
+.right_menu #right_nav ul{
+   margin: 0;
+   padding: 0;
+}
+
+.right_menu #right_nav ul li{
+   
+   list-style: none;
+   color: aliceblue;
+   float: left;
+   padding: 15px 20px;
+   font-size: 16px;
+}
+
+#left_buttom_div{
+   background-color: aliceblue;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+  
+}
+#left_buttom_div ul{
+   margin: 0;
+   padding: 0;
+}
+#left_buttom_div ul li{
+   list-style: none;
+   padding: 15px 0;
+}
+#left_buttom_div ul li a{
+   text-decoration: none;
+   
+  
+}
+#tab_control{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 300px;
+   height: 300px;
+   background-color: aqua;
+
+}
+
+#buttom_text{
+   background-color: beige;
+   text-align: center;
+  
+}
+#buttom_text p{
+   padding: 5px 0;
 }

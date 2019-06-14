@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .myDiv {
+            width: 1000px;
+            border: 2px red solid;
+
+
+        }
+
+        .myDiv::after {
+            content: "";
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .div1 {
+            width: 300px;
+            height: 200px;
+            background: green;
+            display: inline-block;
+
+
+        }
+
+        .div2 {
+            width: 300px;
+            height: 500px;
+            background: red;
+            display: inline-block;
+            float: left;
+
+        }
+
+        .div3 {
+            width: 300px;
+            height: 300px;
+            background: rebeccapurple;
+            display: inline-block;
+        }
+
+        .select_ul {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .select {
+            width: 300px;
+            height: 40px;
+            margin: 0 auto;
+            font-size: 16px;
+            font-family: monospace;
+            position: relative;
+            background: white;
+        }
+
+        .select::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-left: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            transform: rotate(-45deg);
+        }
+
+        .select p {
+            padding: 0 15px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .select ul {
+            list-style-type: none;
+            background-color: #fff;
+            width: 100%;
+            overflow-y: auto;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            max-height: 0;
+        }
+
+        .select ul li {
+            padding: 0 15px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .select ul li:hover {
+            background-color: #e0e0e0;
+
+        }
+
+        .select ul li.selected {
+            background-color: #39f;
+            color: #fff;
+            
+        }
+
+        @-webkit-keyframes slide-down{
+            0%{transform: scale(1,0);}
+            25%{transform: scale(1,1.2);}
+            50%{transform: scale(1,0.85);}
+            75%{transform: scale(1,1.05);}
+            100%{transform: scale(1,1);}
+        }
+
+        .open ul {
+            max-height: 250px;
+            -webkit-animation: slide-down 0.5s ease-in;
+            transition: max-height 0.2s ease-in;
+            transform-origin: 50% 0;
+        }
+
+        .open::after{
+            transform: rotate(-225deg);
+            top: 18px;
+            transition: .3s all ease-in;
+        }
+
+        .radio-1 input[type="radio"]{
+            width: 25px;
+            height: 25px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="myDiv">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div>
+
+    <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>
+
+
+
+    <div class="select">
+        <p>所有属性</p>
+        <ul class="select_ul">
+            <li data-value="所有属性" class="selected">所有选项</li>
+            <li data-value="后台">后台</li>
+            <li data-value="前端">前端</li>
+            <li data-value="移动端">移动端</li>
+
+        </ul>
+    </div>
+
+
+    <div class="radio-1">
+        <input type="radio" id="radio1-1" name="radio1">
+        <input type="radio" id="radio1-2" name="radio1">
+        <input type="radio" id="radio1-3" name="radio1">
+        <input type="radio" id="radio1-4" name="radio1">
+
+
+    </div>
+
+    <script src="../lib/jquery/jquery-3.4.1.js"></script>
+
+    <script>
+        $(function () {
+            $('.select > p').on('click',function(){
+               $(".select").toggleClass("open");
+               return false;
+            });
+
+            $('.select > ul li').on('click',function(e){
+                var $this = $(this);
+                $(".select>p").text($this.attr("data-value"));
+                $this.addClass("selected");
+                $this.siblings().removeClass("selected");
+                $(".select").removeClass("open");
+                e.stopPropagation();
+            });
+
+            $(document).on("click",function(){
+                $(".select").removeClass("open");
+                
+            });
+        
+            
+
+            
+        });
+    </script>
+</body>
+
+</html>
