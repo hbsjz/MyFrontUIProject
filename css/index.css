@@ -1,17 +1,18 @@
-#mian_container{
+#mian_container {
    width: 100%;
+   height: 100%;
    display: flex;
 }
 
 
-.imageText{
+.imageText {
    font-size: 500px;
    color: bisque;
 
 }
 
-.left_div{
-   width: 300px;
+.left_div {
+   width: 250px;
    height: auto;
    background-color: burlywood;
    text-align: center;
@@ -19,74 +20,91 @@
 
 }
 
-#left_top_logo_image{
+#left_top_logo_image {
    margin: 0 auto;
    margin-top: 20px;
 }
 
-.banner_div{
+.banner_div {
    width: 60%;
    height: auto;
-   flex: 1;  
+   flex: 1;
    background-color: cadetblue;
    position: relative;
 }
 
-#left_ul{
-   margin-top: 30px;
+#left_ul {
+   margin-top: 25px;
    padding: 0;
 }
 
-#left_ul li{
+#left_ul li {
    list-style: none;
-   padding: 20px 10px;
+   padding: 15px 0;
    font-size: 18px;
    color: black;
 }
 
-.right_menu{
+.right_menu {
    position: absolute;
    top: 0;
    right: 0;
    text-align: center;
-   background: black 1px;
+   background-color: rgba(0, 0, 0, 0.6);
 }
-.right_menu #right_nav ul{
+.right_menu #right_nav{
+   float: left;
+}
+
+.right_menu #right_nav ul {
    margin: 0;
    padding: 0;
 }
+.right_menu #right_nav a{
+   display: inline-block;
+   padding: 10px 0;
+  
+}
 
-.right_menu #right_nav ul li{
-   
+.right_menu #right_nav>ul>li {
+
    list-style: none;
    color: aliceblue;
    float: left;
    padding: 15px 20px;
    font-size: 16px;
 }
+#right_nav ul ul{
+   position: absolute;
+   background-color: aqua;
+}
 
-#left_buttom_div{
+#left_buttom_div {
    background-color: aliceblue;
    position: absolute;
    bottom: 0;
    left: 0;
    width: 100%;
-  
+
 }
-#left_buttom_div ul{
+
+#left_buttom_div ul {
    margin: 0;
    padding: 0;
 }
-#left_buttom_div ul li{
+
+#left_buttom_div ul li {
    list-style: none;
-   padding: 15px 0;
+   padding: 10px 0;
 }
-#left_buttom_div ul li a{
+
+#left_buttom_div ul li a {
    text-decoration: none;
-   
-  
+
+
 }
-#tab_control{
+
+#tab_control {
    position: absolute;
    bottom: 0;
    right: 0;
@@ -96,11 +114,41 @@
 
 }
 
-#buttom_text{
-   background-color: beige;
+#buttom_text {
    text-align: center;
-  
+   position: absolute;
+   width: 100%;
+   height: 30px;
+   bottom: 0;
+   text-align: center;
 }
 #buttom_text p{
+   font-size: 12px;
+}
+
+#buttom_text p {
    padding: 5px 0;
+}
+
+.right_menu #right_nav #item_ul_right_menu{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+ 
+}
+.hidde_menu{
+   display: none;
+}
+
+.right_menu #right_nav #item_ul_right_menu li{
+  list-style: none;
+  padding: 10px 0;
+ 
+}
+#right_nav a{
+   text-decoration: none;
+   color: white;
+}
+#right_nav a:hover{
+   color: chartreuse;
 }
