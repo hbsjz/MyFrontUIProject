@@ -89,6 +89,7 @@
 #item_ul_right_menu>li{
    list-style: none;
    text-align: center;
+   width: 120px;
    padding: 5px 0;
 }
 
@@ -96,10 +97,8 @@
    padding: -0 0;
 }
 #item_ul_right_menu>li>a{
-   width: 120px;
-   display: inline-block;
-  
-
+   text-decoration: none;
+   font-size: 14px;
 }
 
 #left_buttom_div {
