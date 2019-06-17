@@ -52,31 +52,54 @@
    text-align: center;
    background-color: rgba(0, 0, 0, 0.6);
 }
-.right_menu #right_nav{
+#right_nav{
    float: left;
 }
 
-.right_menu #right_nav ul {
-   margin: 0;
+#right_nav ul {
    padding: 0;
 }
-.right_menu #right_nav a{
+#right_nav>ul>li>a{
    display: inline-block;
-   padding: 10px 0;
+   padding: 15px 20px;
+   text-decoration: none;
+   color: white;
   
 }
+#right_nav>ul>li>a:hover{
+   color: chartreuse;
+}
 
-.right_menu #right_nav>ul>li {
+#right_nav>ul>li {
 
    list-style: none;
    color: aliceblue;
    float: left;
-   padding: 15px 20px;
    font-size: 16px;
+   width: 120px;
+  
 }
-#right_nav ul ul{
-   position: absolute;
+
+#item_ul_right_menu{
+   margin: 0 auto;
+   padding: 0 0;
    background-color: aqua;
+   position: absolute;
+}
+#item_ul_right_menu>li{
+   list-style: none;
+   text-align: center;
+   padding: 5px 0;
+}
+
+#item_ul_right_menu>li:first-child{
+   padding: -0 0;
+}
+#item_ul_right_menu>li>a{
+   width: 120px;
+   display: inline-block;
+  
+
 }
 
 #left_buttom_div {
@@ -88,17 +111,17 @@
 
 }
 
-#left_buttom_div ul {
+#left_buttom_div>ul {
    margin: 0;
    padding: 0;
 }
 
-#left_buttom_div ul li {
+#left_buttom_div>ul>li {
    list-style: none;
    padding: 10px 0;
 }
 
-#left_buttom_div ul li a {
+#left_buttom_div>ul>li>a {
    text-decoration: none;
 
 
@@ -130,25 +153,9 @@
    padding: 5px 0;
 }
 
-.right_menu #right_nav #item_ul_right_menu{
-   margin: 0;
-   padding: 0;
-   text-align: center;
- 
-}
+
 .hidde_menu{
    display: none;
 }
 
-.right_menu #right_nav #item_ul_right_menu li{
-  list-style: none;
-  padding: 10px 0;
- 
-}
-#right_nav a{
-   text-decoration: none;
-   color: white;
-}
-#right_nav a:hover{
-   color: chartreuse;
-}
+
