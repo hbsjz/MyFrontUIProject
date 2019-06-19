@@ -98,14 +98,19 @@
    text-align: center;
    width: 120px;
    white-space:nowrap;
+   
 }
 
 #item_ul_right_menu>li>a{
    text-decoration: none;
    font-size: 14px;
-   line-height: 20px;
+   display: inline-block;
+   vertical-align:middle;
+   width: 100%;
+   height: 40px;
+   text-align: center;
 }
-#item_ul_right_menu>li:hover{
+#item_ul_right_menu>li>a:hover{
    background-color: bisque;
 }
 
