@@ -8,7 +8,6 @@ $(function () {
     $("#right_nav>ul>li").hover(function () {
         $(this).children("#item_ul_right_menu").stop();
         $(this).children("#item_ul_right_menu").slideToggle(300);
-
     });
 
 
