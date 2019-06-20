@@ -89,9 +89,10 @@
 #item_ul_right_menu{
    margin: 0 auto;
    padding: 0 0;
-   background-color: aqua;
+   background-color: white;
    position: absolute;
-   border-radius: 0 0 2px 2px;
+   border: #88888888 1px solid;
+   border-radius: 0 0 1.5px 1.5px;
 }
 #item_ul_right_menu>li{
    list-style: none;
@@ -105,11 +106,53 @@
    font-size: 14px;
    display: inline-block;
    vertical-align:middle;
-   width: 100%;
+   width: 98%;
    line-height: 40px;
+   border-radius: 1.5px ;
+   color: #555555;
+   overflow:hidden;
 }
+
+
+@-moz-keyframes textColor{
+   form{
+      color:#555555;
+   }
+   to{
+      color: white;
+   }
+}
+@-o-keyframes textColor{
+   form{
+      color:#555555;
+   }
+   to{
+      color: white;
+   }
+}
+@keyframes textColor{
+   form{
+      color:#555555;
+   }
+   to{
+      color: white;
+   }
+}
+
 #item_ul_right_menu>li>a:hover{
-   background-color: bisque;
+   background-color: rgb(74, 175, 105);
+   -webkit-animation: textColor 0.3s ease-in;
+   -webkit-animation-fill-mode : forwards;
+
+   -moz-animation: textColor 0.3s ease-in;
+   -moz-animation-fill-mode : forwards;
+
+   -o-animation: textColor 0.3s ease-in;
+   -o-animation-fill-mode : forwards;
+
+   animation: textColor 0.3s ease-in;
+   animation-fill-mode : forwards;
+
 }
 
 #left_buttom_div {
@@ -139,12 +182,20 @@
 
 #tab_control {
    position: absolute;
-   bottom: 0;
-   right: 0;
-   width: 300px;
+   bottom: 20px;
+   right: 20px;
+   width: 600px;
    height: 300px;
-   background-color: aqua;
+   background-color: white;
+   border-radius: 2px;
 
+}
+#tab_control>h4{
+   padding: 10px 0 10px 10px ;
+   margin: 0;
+}
+#tab_control>hr{
+   margin: 0;
 }
 
 #buttom_text {
