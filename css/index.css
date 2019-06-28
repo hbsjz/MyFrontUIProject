@@ -1,4 +1,4 @@
-#mian_container {
+.mian_container {
    width: 100%;
    height: 100%;
    display: flex;
@@ -20,7 +20,7 @@
 
 }
 
-#left_top_logo_image {
+.left_top_logo_image {
    margin: 0 auto;
    margin-top: 20px;
 }
@@ -33,12 +33,12 @@
    position: relative;
 }
 
-#left_ul {
+.left_ul {
    margin-top: 25px;
    padding: 0;
 }
 
-#left_ul li {
+.left_ul li {
    list-style: none;
    padding: 15px 0;
    font-size: 18px;
@@ -56,14 +56,14 @@
    box-shadow:4px 4px 0.5px #88888888;
    border-radius: 0 0 2px 2px;
 }
-#right_nav{
+.right_nav{
    float: left;
 }
 
-#right_nav ul {
+.right_nav ul {
    padding: 0;
 }
-#right_nav>ul>li>a{
+.right_nav>ul>li>a{
    display: inline-block;
    padding: 15px 20px;
    text-decoration: none;
@@ -72,11 +72,11 @@
 }
 
 
-#right_nav>ul>li>a:hover{
+.right_nav>ul>li>a:hover{
    color: chartreuse;
 }
 
-#right_nav>ul>li {
+.right_nav>ul>li {
 
    list-style: none;
    color: aliceblue;
@@ -86,7 +86,7 @@
   
 }
 
-#item_ul_right_menu{
+.item_ul_right_menu{
    margin: 0 auto;
    padding: 0 0;
    background-color: white;
@@ -94,14 +94,14 @@
    border: #88888888 1px solid;
    border-radius: 0 0 1.5px 1.5px;
 }
-#item_ul_right_menu>li{
+.item_ul_right_menu>li{
    list-style: none;
    text-align: center;
    width: 120px;
    white-space:nowrap;
 }
 
-#item_ul_right_menu>li>a{
+.item_ul_right_menu>li>a{
    text-decoration: none;
    font-size: 14px;
    display: inline-block;
@@ -139,7 +139,7 @@
    }
 }
 
-#item_ul_right_menu>li>a:hover{
+.item_ul_right_menu>li>a:hover{
    background-color: rgb(74, 175, 105);
    -webkit-animation: textColor 0.3s ease-in;
    -webkit-animation-fill-mode : forwards;
@@ -155,7 +155,7 @@
 
 }
 
-#left_buttom_div {
+.left_buttom_div {
    background-color: aliceblue;
    position: absolute;
    bottom: 0;
@@ -164,23 +164,23 @@
 
 }
 
-#left_buttom_div>ul {
+.left_buttom_div>ul {
    margin: 0;
    padding: 0;
 }
 
-#left_buttom_div>ul>li {
+.left_buttom_div>ul>li {
    list-style: none;
    padding: 10px 0;
 }
 
-#left_buttom_div>ul>li>a {
+.left_buttom_div>ul>li>a {
    text-decoration: none;
 
 
 }
 
-#tab_control {
+.tab_control {
    position: absolute;
    bottom: 20px;
    right: 20px;
@@ -190,15 +190,15 @@
    border-radius: 2px;
 
 }
-#tab_control>h4{
+.tab_control>h4{
    padding: 10px 0 10px 10px ;
    margin: 0;
 }
-#tab_control>hr{
+.tab_control>hr{
    margin: 0;
 }
 
-#buttom_text {
+.buttom_text {
    text-align: center;
    position: absolute;
    width: 100%;
@@ -206,11 +206,11 @@
    bottom: 0;
    text-align: center;
 }
-#buttom_text p{
+.buttom_text p{
    font-size: 12px;
 }
 
-#buttom_text p {
+.buttom_text p {
    padding: 5px 0;
 }
 
