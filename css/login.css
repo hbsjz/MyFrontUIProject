@@ -1,0 +1,28 @@
+.loginContainer{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    border: #eee 2px solid;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    box-shadow: #eee 4px 4px;
+}
+.input_outer{
+    margin-top: 20px;
+    text-align: center;
+    text-align: justify;
+}
+.u_user{
+      display: inline-block;
+      text-align: justify;
+      width: 60px;;
+      height: 20px;
+      overflow: hidden;
+}
+
+.usernameinput{
+    height: 30px;
+}
