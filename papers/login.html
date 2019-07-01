@@ -11,18 +11,29 @@
 <body>
 
     <div class="loginContainer">
+
+        <div class="titleText">
+            <p class="titleTextP">检测</p>
+        </div>
         <div class="input_outer">
                 <span class="u_user">用户名</span>
-                <input class="usernameinput" type="text" name="username">
+                <input class="usernameinput" type="text" name="username" placeholder="用户名">
         </div>
 
         <div class="input_outer">
                 <span class="u_user">密码</span>
-                <input class="usernameinput" type="text" name="username">
+                <input class="usernameinput" type="password"  name="username" placeholder="密码">
+        </div>
+        <div class="forgetPasswordDiv">
+            <a href="#" class="forgetPassword">忘记密码？</a>
+        </div>
+        <div class="loginButtonDiv">
+            <button class="loginButton" id="loginButton">登录</button>
         </div>
         
+        
     </div>
-
-    
+    <script src="../lib/jquery/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

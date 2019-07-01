@@ -1,3 +1,7 @@
+body{
+    background: url("../img/login_bg.jpg") no-repeat fixed ;
+    background-size: 100% 100%;
+}
 .loginContainer{
     width: 500px;
     height: 300px;
@@ -8,21 +12,61 @@
     border: #eee 2px solid;
     transform: translate(-50%,-50%);
     border-radius: 4px;
-    box-shadow: #eee 4px 4px;
+    background-color: rgb(245, 245, 245,0.9);
+}
+.titleText{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.titleTextP{
+    font-size: 25px;
+    font-weight: 700;
 }
 .input_outer{
     margin-top: 20px;
     text-align: center;
-    text-align: justify;
 }
 .u_user{
       display: inline-block;
-      text-align: justify;
       width: 60px;;
-      height: 20px;
-      overflow: hidden;
+      text-align: justify;
+      text-align-last: justify;
 }
 
 .usernameinput{
     height: 30px;
+    width: 200px;
+    padding: 0 5px 0 5px;
+}
+.forgetPasswordDiv{
+    width: 100%;
+    padding: 5px 120px 5px 0;
+}
+.forgetPassword{
+    float: right;
+}
+.forgetPassword:hover{
+    text-decoration: none;
+}
+.loginButtonDiv{
+    width: 100%;
+    text-align: center;
+}
+.loginButton{
+    width: 260px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: aquamarine;
+    border: green 1px solid;
+    border-radius: 2px;
+    color: black;
+}
+.forgetPasswordDiv::after{
+    clear: both;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
