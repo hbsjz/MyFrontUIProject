@@ -2,6 +2,31 @@ body{
     background: url("../img/login_bg.jpg") no-repeat fixed ;
     background-size: 100% 100%;
 }
+
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+}
+.registerDiv{
+    height: 50px;
+    float: right;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+}
+
+.regidterImage{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    float: right;
+}
+.textP{
+    float: right;
+    margin-left: 10px;
+}
 .loginContainer{
     width: 500px;
     height: 300px;
@@ -12,7 +37,7 @@ body{
     border: #eee 2px solid;
     transform: translate(-50%,-50%);
     border-radius: 4px;
-    background-color: rgb(245, 245, 245,0.9);
+    background-color: rgb(245, 245, 245,0.8);
 }
 .titleText{
     width: 100%;
@@ -40,12 +65,18 @@ body{
     padding: 0 5px 0 5px;
 }
 .forgetPasswordDiv{
-    width: 100%;
-    padding: 5px 120px 5px 0;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.remenberPassword{
+    display: inline-block;
 }
 .forgetPassword{
     float: right;
 }
+
 .forgetPassword:hover{
     text-decoration: none;
 }
@@ -61,6 +92,7 @@ body{
     border: green 1px solid;
     border-radius: 2px;
     color: black;
+
 }
 .forgetPasswordDiv::after{
     clear: both;
