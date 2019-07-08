@@ -8,23 +8,31 @@ $(function () {
         var password = $("#passwordinput").val();
 
         if (userName && password) {
-            console.log("用户名" + userName + "----密码：" + password);
+        var dataMap={
+            "username":userName,
+            "password":password,
+            "role":"admin"
+        }
+
+
+
+    
+        console.log("---->map:"+dataMap);
+        
+
+        $.post("http://192.168.1.114:8080/zlq_war_exploded/login", dataMap,
+            function (data, textStatus, jqXHR) {
+                console.log(data);
+                
+            },
+            "dataType"
+        );
         } else {
             console.log("用户名" + userName + "----密码：" + password);
             toastr.warning("密码用户名不能为空");
             return;
         }
-        var dataMap=new Map();
-        dataMap.set("username","admin");
-        dataMap.set("password","mima");
-        dataMap.set("role","role");
-
-        $.post("http://192.168.1.114:8080/zlq_war_exploded/login", dataMap,
-            function (data, textStatus, jqXHR) {
-
-            },
-            "dataType"
-        );
+        
 
     });
 
