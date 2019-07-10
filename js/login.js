@@ -1,9 +1,9 @@
 $(function () {
 
-    optionsTost();
-
-
-    $(".loginButton").click(function (e) {
+    $("#loginButton").on('click',function () {
+	
+		var $btn = $(this).button('loading');
+		  // $btn.button('reset');
         var userName = $("#usernameinput").val();
         var password = $("#passwordinput").val();
 
@@ -13,11 +13,6 @@ $(function () {
             "password":password,
             "role":"admin"
         }
-
-
-
-    
-        console.log("---->map:"+dataMap);
         
 
         $.post("http://192.168.1.114:8080/zlq_war_exploded/login", dataMap,
@@ -29,30 +24,18 @@ $(function () {
         );
         } else {
             console.log("用户名" + userName + "----密码：" + password);
-            toastr.warning("密码用户名不能为空");
+          
             return;
         }
         
 
     });
+	
+	//跳转到注册界面
+	$("#registerDiv").on('click',function(){
+		window.open('register.html','_self')
+	})
 
 
-    //定义tost的参数
-    function optionsTost() {
-        toastr.options = {
-            closeButton: false,
-            debug: false,
-            progressBar: false,
-            positionClass: "toast-bottom-center",
-            onclick: null,
-            showDuration: "300",
-            hideDuration: "1000",
-            timeOut: "2000",
-            extendedTimeOut: "1000",
-            showEasing: "swing",
-            hideEasing: "linear",
-            showMethod: "fadeIn",
-            hideMethod: "fadeOut"
-        };
-    };
+    
 })
