@@ -2,13 +2,6 @@
 	height: 110px;
     background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg) repeat-x left bottom;
 }
-.mainBody{
-	width: 600px;
-	height: 500px;
-	margin: 0 auto;
-	background-color: #00FFFF;
-
-}
 .logo-title{
 	float: left;
     height: 34px;
@@ -18,3 +11,112 @@
     margin-top: 34px;
 	padding-left: 10px;
 }
+.feedBack{
+	float: right;
+	height: 34px;
+	line-height: 34px;
+	font-size: 18px;
+	color: #888;
+	margin-top: 34px;
+	padding-right: 10px;
+}
+.mainBody{
+	width: 480px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 10px 5px 10px 5px ;
+}
+.input-outer input{
+	border: 1px #aaa solid;
+    border-radius: 4px;
+    background: 0 0;
+    text-align: left;
+    font-size: 20px;
+    width: 438px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.error-tips-wrap{
+	background: url(../img/error.png) no-repeat;
+    padding: 0 0 0 24px;
+	margin: 5px 0;
+    color: #ff5b5b;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+	margin-bottom: 25px ;
+}
+.area .nation{
+	width: 112px;
+	height: 50px;
+	float: left;
+}
+
+.area2 .nation2{
+	width: 265px;
+	float: right;
+}
+.phone-code-send{
+	margin-top: 10px;
+}
+.phone-code::after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	display: block;
+	
+}
+.phone-code-send{
+	margin-top: 20px;
+}
+.phone-code-send::after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	display: block;
+}
+
+.send-sms{
+	border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    float: right;
+    width: 307px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+	text-decoration: none;
+}
+.send-sms:hover{
+	text-decoration: none;
+}
+.submit{
+	border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    width: 478px;
+    height: 60px;
+    margin: 40px 0 8px;
+    font-size: 24px;
+}
+
+
+
+
+
+

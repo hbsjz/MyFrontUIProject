@@ -9,9 +9,62 @@
 	<body>
 		<!-- 头部 -->
 		<div class="headDiv">
-			<div class="logo-title">欢迎注册</div>
+			<div class="logo-title">欢迎注册 检测中心</div>
+			
+			<div class="feedBack">意见反馈</div>
 		</div>
 		<div class="mainBody">
+			<form class="mui-input-group">
+				<div class="input-outer">
+					<input type="text" name="username" id="username" placeholder="昵称" maxlength="24" />
+				</div>
+				<div class="error-tips-wrap">
+					<div class="error-tips">昵称不可以为空</div>
+				</div>
+				
+				<div class="input-outer">
+					<input type="text" name="username" id="password" placeholder="密码" maxlength="24" />
+				</div>
+				<div class="error-tips-wrap">
+					<div class="error-tips">密码不可以为空</div>
+				</div>
+				
+				<div class="phone-code">
+					<div class="input-outer area">
+						<input class="nation" autocomplete="off" type="text" value="+86">
+					</div>
+					
+					<div class="input-outer area2">
+						<input class="nation2" autocomplete="off" type="text" placeholder="手机号">
+					</div>
+				</div>
+				
+				<div class="phone-code-send">
+					<div class="input-outer area">
+						<input class="nation" autocomplete="off" type="text" placeholder="短信验证码">
+					</div>
+					
+					<div class="input-outer area2">
+						<a href="javascript:void(0)" id="send-sms" class="send-sms"  tabindex="6">发送短信验证码</a>
+					</div>
+				</div>
+				<div>
+					<input id="get_acc" type="submit" class="submit" value="立即注册" tabindex="8">
+				</div>
+				<div class="agreement">
+					<input type="checkbox" name="agree" id="agree" >
+				    <label for="agree" class="checkbox">
+						<img src="//4.url.cn/zc/v3/img/checkbox_check.png" 
+						srcset="//4.url.cn/zc/v3/img/checkbox_check@2x.png 2x" 
+						data-bind="visible: agree()" style="display: none">
+						<img src="//4.url.cn/zc/v3/img/checkbox_normal.png" 
+						srcset="//4.url.cn/zc/v3/img/checkbox_normal@2x.png 2x" 
+					    style="display: none;">
+						&nbsp;我已阅读并同意相关服务条款和隐私政策
+					</label>
+				</div>
+				
+			</form>
 			
 		</div>
 		
